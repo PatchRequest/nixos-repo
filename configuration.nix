@@ -16,6 +16,7 @@
       ./apps/zsh.nix
       ./apps/chromium.nix
       ./sound.nix
+      ./garbage.nix
     ];
 
 
@@ -41,7 +42,7 @@
   # Automatic TRIM for SSDs
   services.fstrim.enable = true;
 
-  
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
