@@ -59,6 +59,8 @@
   pkgs.zsh-powerlevel10k
   pkgs.zsh
   pkgs.oh-my-zsh
+  xorg.libxcb
+
 
   # Custom Tools
   pkgs.bitwarden
@@ -84,12 +86,18 @@
   pkgs.jetbrains.phpstorm    
   git
   vscode
-  python39
-  pkgs.python39Packages.pip
+  python310
   go
   gcc
   nodejs
   pkgs.php
+
+  # Python
+  pkgs.python310Packages.neo4j-driver
+  #(python310.withPackages(ps: with ps; [ numpy neo4j ]))
+  
+  # Gaming
+  pkgs.steam
 
   #Pentesting
   pkgs.metasploit
