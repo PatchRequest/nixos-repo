@@ -5,6 +5,8 @@
 { config, pkgs, ... }:
 
 {
+
+  
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
@@ -53,6 +55,7 @@
   pkgs.chromium
   wget
   curl
+  unzip
   neofetch  
   notepadqq
   pkgs.openvpn
@@ -60,7 +63,11 @@
   pkgs.zsh
   pkgs.oh-my-zsh
   xorg.libxcb
-
+  pkgs.ark
+  steam-run
+  pkgs.partition-manager
+  pkgs.appimage-run
+  pkgs.ripgrep
 
   # Custom Tools
   pkgs.bitwarden
@@ -91,6 +98,8 @@
   gcc
   nodejs
   pkgs.php
+  pkgs.cmake
+
 
   # Python
   pkgs.python310Packages.neo4j-driver

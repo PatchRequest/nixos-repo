@@ -2,8 +2,12 @@
 
 
 {
+  
+
+  
   # Enable the X11 windowing system.
   services.xserver.enable = true;
+  
 
   # Enable the KDE Plasma Desktop Environment.
   services.xserver.displayManager.sddm.enable = true;
@@ -16,6 +20,10 @@
   };
   services.xserver.videoDrivers = [ "nvidia" ];
   hardware.opengl.enable = true;
+
+  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.beta;
+
+
   hardware.opengl.driSupport32Bit = true;
 
   # Enable automatic login for the user.

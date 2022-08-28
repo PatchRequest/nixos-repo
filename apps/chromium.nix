@@ -12,6 +12,9 @@
     "pkehgijcmpdhfbdbbnkijodmdjhbjlgp" # Privacy Badger
     "hkgfoiooedgoejojocmhlaklaeopbecg" # Picture-in-Picture
     "nngceckbapebfimnlniiiahkandclblb" # Bitwarden
+    "gcbommkclmclpchllfjekcdonpmejbdp" # HTTPS Everywhere
+    "jeoacafpbcihiomhlakheieifhpjdfeo" # Disconnect
+    
   ];
 
 }
